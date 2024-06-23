@@ -21,7 +21,7 @@ Welcome to the **Simple To-Do App**! This web app allows you to manage your task
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/simple-todo-app.git
+   git clone https://github.com/Zenith-004/Todo-App.git
    cd simple-todo-app
    ```
 
