@@ -43,7 +43,11 @@ Welcome to the **Simple To-Do App**! This web app allows you to manage your task
 
 ### Deployment
 
-The app is deployed at [https://todo-app-d1k4.onrender.com](https://todo-app-d1k4.onrender.com). You can follow similar steps to deploy your own version on a hosting service like Render, Vercel, or Heroku.
+The app is deployed at [https://todo-app-d1k4.onrender.com](https://todo-app-d1k4.onrender.com).
+
+> **Note**: The server may take a moment to start up when you first visit the link. Please be patient if the page does not load immediately.
+
+You can follow similar steps to deploy your own version on a hosting service like Render, Vercel, or Heroku.
 
 ## 🛠️ Code Overview
 
@@ -106,3 +110,7 @@ Enjoy your productive journey with the Simple To-Do App! Happy tasking! 🎉
 ### P.S.
 
 Remember, **with great power comes great responsibility**—or in this case, with a simple to-do app comes a beautifully organized life! 😉
+
+---
+
+This should make your README comprehensive and informative, including the note about potential startup delay when visiting the deployment link.
