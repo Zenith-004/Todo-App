@@ -111,6 +111,3 @@ Enjoy your productive journey with the Simple To-Do App! Happy tasking! 🎉
 
 Remember, **with great power comes great responsibility**—or in this case, with a simple to-do app comes a beautifully organized life! 😉
 
----
-
-This should make your README comprehensive and informative, including the note about potential startup delay when visiting the deployment link.
