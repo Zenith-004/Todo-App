@@ -1,6 +1,9 @@
 let express = require("express")
 let { MongoClient, ObjectId } = require("mongodb")
 let sanitizeHTML = require('sanitize-html')
+const dotenv = require('dotenv')
+
+dotenv.config()  //this is calles to load the .env file
 
 let app = express()
 let db
@@ -8,7 +11,7 @@ let db
 app.use(express.static("public"))
 
 async function go() {
-  let client = new MongoClient('mongodb+srv://sheldonashish2004:9OH4UugOLerVLFSk@cluster0.c957qu6.mongodb.net/TodoApp?retryWrites=true&w=majority&appName=Cluster0')
+  const client = new MongoClient(process.env.CONNECTIONSTRING)
   await client.connect()
   db = client.db()
   app.listen(3000)
@@ -23,7 +26,7 @@ app.use(express.urlencoded({ extended: false }))
 function passwordProtected(req,res,next){
   res.set("WWW-Authenticate",'Basic realm="Simple Todo App" ')
   console.log(req.headers.authorization)
-  if(req.headers.authorization == "Basic bGVhcm46bGVhcm4="){
+  if(req.headers.authorization == "Basic bGVhcm46bGVhcm4="){  // |username: learn | password: learn|
     next()
   }else{
     res.status(401).send("Access Denied")
