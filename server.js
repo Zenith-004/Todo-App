@@ -14,7 +14,7 @@ async function go() {
   const client = new MongoClient(process.env.CONNECTIONSTRING)
   await client.connect()
   db = client.db()
-  app.listen(3000)
+  app.listen(process.env.PORT)
 }
 
 go()
